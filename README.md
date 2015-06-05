@@ -8,4 +8,4 @@
 3、编译，如果编译出错，请检查是否缺少引用等等<br/>
 4、运行，运行前需要将/conf下的所有配置文件复制到运行的路径下，并根据自己的情况修改配置<br/>
 
-<img src="http://himg.bdimg.com/sys/portrait/item/64726704.jpg"/>
+
