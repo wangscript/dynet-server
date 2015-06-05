@@ -100,8 +100,8 @@ void Init()
 	gNetServerForClient->Start();
 
 	// Æô¶¯¶¨Ê±Æ÷
-	gDeallien = new DeallineAsync(3000, 0, InteravalUpdate);
-	gDeallien->Start();
+	//gDeallien = new DeallineAsync(3000, 0, InteravalUpdate);
+	//gDeallien->Start();
 
 }
 

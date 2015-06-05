@@ -66,7 +66,7 @@ void ServerConnectMgr::Update(int32 nSrvTime)
 		NetClient* pNetClient = (*it)->pNetClient;
 		if(pNetClient)
 		{
-			pNetClient->Update(nDelay);//1
+			pNetClient->Update(nSrvTime);//1
 		}
 	}
 
