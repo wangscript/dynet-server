@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\msg">
+      <UniqueIdentifier>{ee01a1fd-3ade-4e34-909a-1cca8881db93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\proc">
+      <UniqueIdentifier>{8390cde1-6b33-4f8c-bded-372cbd7a88b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server">
+      <UniqueIdentifier>{4bd0624a-80f1-455f-bac6-08424c7c2ced}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ss_main.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="ForServerMsgHandler.cpp">
+      <Filter>源文件\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="ForWorldMsgHandler.cpp">
+      <Filter>源文件\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcWorldHandler.cpp">
+      <Filter>源文件\proc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="ForWorldMsgHandler.h">
+      <Filter>源文件\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="ForServerMsgHandler.h">
+      <Filter>源文件\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcWorldHandler.h">
+      <Filter>源文件\proc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

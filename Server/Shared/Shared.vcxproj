@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8E33488-6C09-48A6-AF02-4644982928B5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Shared</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <AdditionalIncludeDirectories>../boost;../mysql/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../mysql/lib/debug;../boost/stage/lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../boost;../mysql/include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="common\BaseDefine.h" />
+    <ClInclude Include="common\BaseMsgHandler.h" />
+    <ClInclude Include="common\BaseProcHandler.h" />
+    <ClInclude Include="common\BaseSession.h" />
+    <ClInclude Include="common\BaseSingle.h" />
+    <ClInclude Include="common\ClientSession.h" />
+    <ClInclude Include="common\CommonC2W.h" />
+    <ClInclude Include="common\CommonF2C.h" />
+    <ClInclude Include="Common\CommonInternal.h" />
+    <ClInclude Include="common\DeallineAsync.h" />
+    <ClInclude Include="common\ServerConnectMgr.h" />
+    <ClInclude Include="common\ServerInfoMgr.h" />
+    <ClInclude Include="common\ServerSession.h" />
+    <ClInclude Include="common\CommonC2S.h" />
+    <ClInclude Include="common\CommonD2W.h" />
+    <ClInclude Include="common\CommonError.h" />
+    <ClInclude Include="common\CommonF2W.h" />
+    <ClInclude Include="common\CommonL2W.h" />
+    <ClInclude Include="common\CommonS2C.h" />
+    <ClInclude Include="common\CommonServerOpt.h" />
+    <ClInclude Include="common\CommonUtility.h" />
+    <ClInclude Include="common\CommonW2D.h" />
+    <ClInclude Include="common\CommonW2F.h" />
+    <ClInclude Include="common\CommonW2L.h" />
+    <ClInclude Include="common\CompilerDefs.h" />
+    <ClInclude Include="common\def_attribute.h" />
+    <ClInclude Include="common\def_buff.h" />
+    <ClInclude Include="common\def_channel.h" />
+    <ClInclude Include="common\def_character.h" />
+    <ClInclude Include="common\def_creature.h" />
+    <ClInclude Include="common\def_entity.h" />
+    <ClInclude Include="common\Encrypt.h" />
+    <ClInclude Include="common\Geometry2D.h" />
+    <ClInclude Include="common\LogManager.h" />
+    <ClInclude Include="common\MemoryPool.h" />
+    <ClInclude Include="common\ObjPool.h" />
+    <ClInclude Include="common\CommonDefine.h" />
+    <ClInclude Include="common\ResourceBuffer.h" />
+    <ClInclude Include="common\typedef.h" />
+    <ClInclude Include="common\UnorderedMap.h" />
+    <ClInclude Include="common\UnorderedSet.h" />
+    <ClInclude Include="common\util.h" />
+    <ClInclude Include="common\CommonC2F.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\ClientSession.cpp" />
+    <ClCompile Include="common\DeallineAsync.cpp" />
+    <ClCompile Include="common\ServerConnectMgr.cpp" />
+    <ClCompile Include="common\ServerInfoMgr.cpp" />
+    <ClCompile Include="common\ServerSession.cpp" />
+    <ClCompile Include="common\Encrypt.cpp" />
+    <ClCompile Include="common\Geometry.cpp" />
+    <ClCompile Include="common\LogManager.cpp" />
+    <ClCompile Include="common\MemoryPool.cpp" />
+    <ClCompile Include="common\ObjPool.cpp" />
+    <ClCompile Include="common\ResourceBuffer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+    </Filter>
+    <Filter Include="源文件\msg">
+      <UniqueIdentifier>{e7606174-cb23-476a-ac15-49dc1570f2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server">
+      <UniqueIdentifier>{55723468-84ed-49ca-bfd2-38f52556645b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\proc">
+      <UniqueIdentifier>{185193bf-7050-4890-9d90-739886983475}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="ForClientMsgHandler.h">
+      <Filter>源文件\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="ForWorldMsgHandler.h">
+      <Filter>源文件\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcWorldHandler.h">
+      <Filter>源文件\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ForServerMsgHandler.h">
+      <Filter>源文件\msg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fep_main.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="ForClientMsgHandler.cpp">
+      <Filter>源文件\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="ForWorldMsgHandler.cpp">
+      <Filter>源文件\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcWorldHandler.cpp">
+      <Filter>源文件\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="ForServerMsgHandler.cpp">
+      <Filter>源文件\msg</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

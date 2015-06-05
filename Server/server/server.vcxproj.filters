@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="db">
+      <UniqueIdentifier>{51d80bfb-81cb-4cf2-9327-3af31251d78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{6e5e5dff-abd7-4788-895d-a253486817e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{8167f72a-c83f-45af-a598-3f886c752997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="def">
+      <UniqueIdentifier>{d9833815-0f0b-43e3-89b4-831290df6f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{68963c17-e348-4341-ac26-cb33128b8e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\player">
+      <UniqueIdentifier>{1e82a207-bd5d-4302-90a0-f0513964abd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\monster">
+      <UniqueIdentifier>{57626d44-4bf3-4abc-aa9c-20ecd8d76217}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBLoginHandler.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="NetChatHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetLoginHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommand.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDB.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMsgHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConfig.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server_PCH.h">
+      <Filter>def</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>scene\player</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceMgr.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVar.h">
+      <Filter>def</Filter>
+    </ClInclude>
+    <ClInclude Include="Buff.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelRegist.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChannel.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRegion.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet_def.h">
+      <Filter>def</Filter>
+    </ClInclude>
+    <ClInclude Include="NetEquipHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetSceneHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetProgressHandle.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetPackHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetPetHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetRelationHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTaskHandler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyChannelControl.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DBLoginHandler.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="NetChatHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetLoginHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetMsgHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommand.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="GameConfig.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server_PCH.cpp">
+      <Filter>def</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>scene\player</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVar.cpp">
+      <Filter>def</Filter>
+    </ClCompile>
+    <ClCompile Include="Buff.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChannel.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRegion.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="NetEquipHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetSceneHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetProgressHandle.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetPackHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetPetHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetRelationHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NetTaskHandler.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyChannelControl.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ss_main.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

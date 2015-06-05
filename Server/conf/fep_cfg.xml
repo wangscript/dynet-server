@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<!-- local -->
+	<local id="1001" host="127.0.0.1" port="9901" type="1"></local>
+	<!-- wsserver -->
+	<remote id="3001" host="127.0.0.1" port="9903" type="3"></remote>
+	<!-- client -->
+	<client id="0" host="127.0.0.1" port="9900" type="0"></client>
+</items>
